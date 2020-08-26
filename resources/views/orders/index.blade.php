@@ -36,7 +36,7 @@
                 @foreach($orders as $order)
                     <tr @if($order->status =='Processing') class="table-success" @endif>
                         <th scope="row">{{ $order->id }}</th>
-                        <td>{{ $order->produc_name }}</td>
+                        <td>{{ $order->product_name }}</td>
                         <td>{{ $order->currency }}</td>
                         <td>{{ $order->amount }}</td>
                         <td>{{ $order->invoice }}</td>
